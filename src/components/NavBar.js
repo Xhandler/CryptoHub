@@ -5,14 +5,13 @@ import React, { Component } from 'react';
      return(
        <div>
          <div className="container">
-          <div className="Logo">
-          <img src={require("../img/icon3.png")}></img>
-          </div>
           <div className="NavBar">
           <ul>
+            <li><img src={require("../img/icon3.png")} className="logo"></img></li>
             <li> Home </li>
             <li> About </li>
             <li> Contact </li>
+            <p>chanes</p>
           </ul>
           </div>
          </div>
