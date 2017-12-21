@@ -11,7 +11,6 @@ import React, { Component } from 'react';
             <li> Home </li>
             <li> About </li>
             <li> Contact </li>
-            <p>chanes</p>
           </ul>
           </div>
          </div>
