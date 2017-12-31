@@ -4,7 +4,6 @@ import React, { Component } from 'react';
    render() {
      return(
        <div>
-         <div className="container">
           <div className="NavBar">
           <ul>
             <li><img src={require("../img/icon3.png")} className="logo"></img></li>
@@ -13,7 +12,6 @@ import React, { Component } from 'react';
             <li> Contact </li>
           </ul>
           </div>
-         </div>
        </div>
      );
    }
