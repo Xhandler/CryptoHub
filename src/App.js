@@ -6,8 +6,6 @@ import NewsTable from './components/NewsTable';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
-const ReactDOM = require('react-dom');
-
 class App extends Component {
   render() {
     return (
