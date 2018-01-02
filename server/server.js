@@ -12,7 +12,7 @@ app.use(express.static('build'));
 app.set('views', './build');
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve('/build/index.html'));
+  res.sendFile(path.resolve('../build/index.html'));
 });
 
 module.exports = app;

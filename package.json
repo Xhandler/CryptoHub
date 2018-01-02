@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "cheerio": "^1.0.0-rc.2",
-    "create-react-class": "^15.6.2",
-    "react": "^16.2.0",
-    "react-bootstrap": "^0.31.5",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "bootstrap": "*",
+    "cheerio": "*",
+    "copyfiles": "*",
+    "create-react-class": "*",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-dom": "*",
+    "react-scripts": "*"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts build && copy build server/build",
+    "build": "react-scripts build && copy build server/build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
