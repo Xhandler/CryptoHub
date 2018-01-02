@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/lib/Button';
    render() {
      return(
        <div>
-         <p> That ill container </p>
          <Button bsStyle="primary" bsSize="large">Large button</Button>
        </div>
      );

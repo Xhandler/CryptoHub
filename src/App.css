@@ -1,26 +1,6 @@
-.NavBar ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
 .NavBar {
   width: 100%;
-  height: 50px;
+  height: 50%;
   background-color: black;
   color: white;
-}
-.NavBar li {
-  text-decoration-color: white;
-  display: inline;
-  float:left;
-  padding-left: 10px;
-  font-size: 28px;
-  font-family: 'Pacifico', cursive;
-
-}
-.container {
-  display: inline;
-  background-color: green;
-  width: 100%;
-  height: 20px;
 }
