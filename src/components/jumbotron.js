@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
+import Websocket from 'react-websocket';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 
- class Jumbo extends Component {
-   render() {
-     return(
-       <div>
-         <Jumbotron>
-         <h1 className="display-3">Hello, world!</h1>
-          <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr className="my-2" />
-          <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
-          <p className="lead">
-          </p>
-         </Jumbotron>
-       </div>
-     );
-   }
+class Jumbo extends Component {
+ constructor(props) {
+     // makes this refer to this component
+     super(props);
+     // set local state
+     this.state = {
+         date: new Date()
+     };
  }
+ render() {
+   return(
+     <div>
+       <Jumbotron>
+        <p>{this.state.date}</p>
+       </Jumbotron>
+     </div>
+   );
+ }
+}
 
 export default Jumbo;
