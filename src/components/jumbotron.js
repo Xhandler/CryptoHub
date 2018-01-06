@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import Websocket from 'react-websocket';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 
-class Jumbo extends Component {
- constructor(props) {
-     // makes this refer to this component
+ class Jumbo extends Component {
+   constructor(props) {
      super(props);
-     // set local state
      this.state = {
-         date: new Date()
+       message:'',
      };
+   }
+   handleChange(e) {
+    console.log("Handle change function triggering.")
  }
- render() {
-   return(
-     <div>
-       <Jumbotron>
-        <p>{this.state.date}</p>
-       </Jumbotron>
-     </div>
-   );
+   render() {
+     return(
+       <div>
+         <Jumbotron>
+          <input type="text" placeholder="Search a news source..." onSubmit={this.handleChange} />
+         </Jumbotron>
+       </div>
+     );
+   }
  }
-}
 
 export default Jumbo;

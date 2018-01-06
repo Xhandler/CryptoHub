@@ -8,6 +8,7 @@
     "copyfiles": "*",
     "create-react-class": "*",
     "react": "*",
+    "react-addons-linked-state-mixin": "^15.6.2",
     "react-bootstrap": "*",
     "react-dom": "*",
     "react-scripts": "*"

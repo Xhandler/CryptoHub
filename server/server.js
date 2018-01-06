@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var server = require('http').createServer();
+process.env.NODE_ENV = 'development';
 
 app.use(express.static(path.join(__dirname, '/build')));
 
@@ -11,7 +12,6 @@ wss.on('connection', function (ws) {
   console.log('started client interval');
   ws.on('close', function () {
     console.log('stopping client interval');
-    clearInterval(id);
   });
 });
 
