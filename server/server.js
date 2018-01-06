@@ -1,18 +1,24 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
-const path = require('path');
+var WebSocketServer = require('ws').Server;
+var express = require('express');
+var path = require('path');
+var app = express();
+var server = require('http').createServer();
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static('build'));
-app.set('views', './build');
+app.use(express.static(path.join(__dirname, '/build')));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve('../build/index.html'));
+var wss = new WebSocketServer({server: server});
+wss.on('connection', function (ws) {
+  var id = setInterval(function () {
+    ws.send(JSON.stringify(process.memoryUsage()), function () { /* ignore errors */ });
+  }, 100);
+  console.log('started client interval');
+  ws.on('close', function () {
+    console.log('stopping client interval');
+    clearInterval(id);
+  });
 });
 
-module.exports = app;
+server.on('request', app);
+server.listen(8080, function () {
+  console.log('Listening on http://localhost:8080');
+});
