@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/lib/Jumbotron';
+import {Jumbotron, Form, FormGroup} from 'react-bootstrap/lib/Jumbotron';
 
  class Jumbo extends Component {
    constructor(props) {
@@ -15,7 +15,13 @@ import Jumbotron from 'react-bootstrap/lib/Jumbotron';
      return(
        <div>
          <Jumbotron>
-          <input type="text" placeholder="Search a news source..." onSubmit={this.handleChange} />
+            <Form>
+              <FormGroup controlId="formBasicText" validationState={this.getValidationState()}>
+                <ControlLabel>Working example with validation</ControlLabel>
+                <FormControl type="text" value={this.state.value} placeholder="Enter text" onChange={this.handleChange}/>
+                <FormControl.Feedback />
+              </FormGroup>
+            </Form>
          </Jumbotron>
        </div>
      );

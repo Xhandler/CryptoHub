@@ -1,21 +1,19 @@
-var WebSocketServer = require('ws').Server;
-var express = require('express');
-var path = require('path');
-var app = express();
-var server = require('http').createServer();
-process.env.NODE_ENV = 'development';
-
+const WebSocketServer = require('ws').Server;
+const express = require('express');
+const path = require('path');
+const app = express();
+const server = require('http').createServer();
 app.use(express.static(path.join(__dirname, '/build')));
-
-const wss = new WebSocketServer({server: server});
-wss.on('connection', function (ws) {
+const wss = new WebSocketServer({
+  server
+});
+wss.on('connection', (ws) => {
   console.log('started client interval');
-  ws.on('close', function () {
+  ws.on('close', () => {
     console.log('stopping client interval');
   });
 });
-
 server.on('request', app);
-server.listen(8080, function () {
+server.listen(8080, () => {
   console.log('Listening on http://localhost:8080');
 });

@@ -17,9 +17,11 @@
     "start": "react-scripts build && copy build server/build",
     "build": "react-scripts build && copy build server/build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint **/*.js"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.5.1",
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, Button} from 'react-bootstrap';
 import Logo from '../img/000192-cat.png';
 
  class NavBar extends Component {

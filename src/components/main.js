@@ -13,14 +13,14 @@ import Col from 'react-bootstrap/lib/Col';
    render() {
      return(
        <div>
-        <Grid>
+        <Grid fluid={true}>
           <Row>
-            <Col>
-
-            </Col>
-            <Col>
-
-            </Col>
+          <Col xs={12} sm={12} md={6} lg={6} >
+           <p>Hey there</p>
+           </Col>
+           <Col xs={12} sm={12} md={6} lg={6}>
+           <p>Hello</p>
+           </Col>
           </Row>
         </Grid
        </div>
