@@ -1,4 +1,4 @@
-import Jumbo from './jumbie';
+import Jumbo from './jumbo';
 import NavBar from './NavBar';
 import React, { Component } from 'react';
 class Mid extends Component {

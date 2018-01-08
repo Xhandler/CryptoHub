@@ -11,7 +11,9 @@
     "react-addons-linked-state-mixin": "^15.6.2",
     "react-bootstrap": "*",
     "react-dom": "*",
-    "react-scripts": "*"
+    "react-scripts": "*",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
