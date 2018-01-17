@@ -29,7 +29,7 @@ class JumbotronForm extends Component {
         <FormGroup>
           <Label for="exampleEmail">Search</Label>
           <Input type="text" id="exampleEmail" refs="messageText" placeholder="Choose news feed to add..." />
-          <Button color="primary" type="submit" onPress="handleFormSubmit">
+          <Button color="primary" onPress="handleFormSubmit">
           </Button>
         </FormGroup>
       </Form>
