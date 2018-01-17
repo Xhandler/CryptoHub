@@ -6,17 +6,17 @@ class JumbotronForm extends Component {
     this.socket = new WebSocket('ws://localhost:8001');
     this.state = {
       connected: false,
-      open: false
+      open: false,
+      handleForm: (e) => {
+        e.preventDefault();
+        console.log('Button is clicked... sending data from from.');
+        const text = document.getElementById('exampleEmail').value;
+        this.socket.send(text);
+      }
     };
-  }
-  handleForm(e) {
-    e.preventDefault();
-    const text = this.refs.messageText.value;
-    this.socket.send(text);
   }
   componentDidMount() {
     this.socket.onopen = () => {
-      console.log('a socket has been opened');
       this.socket.send('Socket message sent to back end from React jumbotronForm rendering');
       this.setState({
         connected: true
@@ -29,7 +29,8 @@ class JumbotronForm extends Component {
         <FormGroup>
           <Label for="exampleEmail">Search</Label>
           <Input type="text" id="exampleEmail" refs="messageText" placeholder="Choose news feed to add..." />
-          <Button color="primary" type="button" onPress="handleForm">
+          <Button className="btn-primary" type="button" onClick={this.state.handleForm}>
+          Submit!
           </Button>
         </FormGroup>
       </Form>
