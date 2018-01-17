@@ -10,7 +10,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   </style>
-    <title>React App</title>
+    <title>Cryptohub</title>
   </head>
   <body>
     <div id="root"></div>
@@ -19,16 +19,10 @@
     <script src="https://fb.me/react-dom-15.0.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
     <script>
-
-  // Extremely simplified here, no error handling or anything
 document.body.onload = function() {
-
-    'use strict';
-
-  // First the socket requesta
   function socketExample() {
     console.log('Creating socket');
-    let socket = new WebSocket('ws://localhost:8080/');
+    let socket = new WebSocket('ws://localhost:8001/');
     socket.onopen = function() {
 
       console.log('Socket open.');
@@ -36,40 +30,12 @@ document.body.onload = function() {
       console.log('Message sent.')
     };
     socket.onmessage = function(message) {
-
       console.log('Socket server message', message);
       let data = JSON.parse(message.data);
       document.getElementById('response').innerHTML = JSON.stringify(data, null, 2);
     };
   }
-
-  // Now the simple POST demo
-  function postExample() {
-
-    console.log('Creating regular POST message');
-
-    fetch('/', {
-      method: 'post',
-      headers: {
-        "Content-type": "application/json"
-      },
-      body: JSON.stringify({message: 'What is the meaning of post-life, the universe and everything?'})
-    })
-    .then(response => response.json())
-    .then(function (data) {
-
-      console.log('POST response:', data);
-      document.getElementById('post-response').innerHTML = JSON.stringify(data, null, 2);
-    })
-    .catch(function (error) {
-      console.log('Request failed', error);
-    });
-  }
-
-  // Call them both;
-
   socketExample();
-  postExample();
 }
   </script>
   </body>
