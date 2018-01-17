@@ -9,7 +9,7 @@ class JumbotronForm extends Component {
       open: false
     };
   }
-  handleFormSubmit(e) {
+  handleForm(e) {
     e.preventDefault();
     const text = this.refs.messageText.value;
     this.socket.send(text);
@@ -29,7 +29,7 @@ class JumbotronForm extends Component {
         <FormGroup>
           <Label for="exampleEmail">Search</Label>
           <Input type="text" id="exampleEmail" refs="messageText" placeholder="Choose news feed to add..." />
-          <Button color="primary" onPress="handleFormSubmit">
+          <Button color="primary" type="button" onPress="handleForm">
           </Button>
         </FormGroup>
       </Form>
