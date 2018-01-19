@@ -1,4 +1,4 @@
-const WebSocketServer = require('ws').Server;
+const WebSocketServer = require('uws').Server;
 const express = require('express');
 const path = require('path');
 const app = express();
