@@ -9,8 +9,16 @@ const wss = new WebSocketServer({
 });
 wss.on('connection', (ws) => {
   console.log('started client interval');
-  ws.onmessage = (e) => {
-    console.log(e.data);
+  const api = {
+    login: () => {
+      console.log('hi');
+    }
+  };
+  ws.onmessage = function(e) {
+    const data = JSON.parse(e.data);
+    if (data.event === 'login') {
+      api.login();
+    }
   };
   ws.on('close', () => {
     console.log('stopping client interval');

@@ -17,7 +17,12 @@ class JumbotronForm extends Component {
   }
   componentDidMount() {
     this.socket.onopen = () => {
-      this.socket.send('Socket message sent to back end from React jumbotronForm rendering');
+      this.socket.send(JSON.stringify({
+        event: 'login',
+        test: {
+          message: 'test'
+        }
+      }));
       this.setState({
         connected: true
       });
