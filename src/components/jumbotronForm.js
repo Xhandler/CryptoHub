@@ -11,7 +11,12 @@ class JumbotronForm extends Component {
         e.preventDefault();
         console.log('Button is clicked... sending data from from.');
         const text = document.getElementById('exampleEmail').value;
-        this.socket.send(text);
+        this.socket.send(JSON.stringify({
+          event: text,
+          test: {
+            message: 'test'
+          }
+        }));
       }
     };
   }
