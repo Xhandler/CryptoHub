@@ -9,16 +9,26 @@ class Main extends Component {
       message: '',
     };
   }
+  componentDidMount() {
+//    axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
+      .then(res => {
+        const posts = res.data.data.children.map(obj => obj.data);
+        this.setState({ posts });
+      });
+  }
   render() {
     return (
       <div>
         <Grid fluid={true}>
           <Row>
             <Col xs={12} sm={12} md={6} lg={6} >
-              <p>Hey there</p>
+              <p>Area to place news sites</p>
+              // componentWillMount
+              //
+              //
             </Col>
             <Col xs={12} sm={12} md={6} lg={6}>
-              <p>Hello</p>
+              <p>Area to display currently active links</p>
             </Col>
           </Row>
         </Grid>

@@ -9,6 +9,8 @@
     "express-ws": "^3.0.0",
     "geoip-lite": "^1.2.1",
     "http-server": "^0.10.0",
+    "rethinkdbdash": "^2.3.31",
+    "thinky": "^2.3.9",
     "useragent": "^2.2.1",
     "websocket": "^1.0.25"
   },
