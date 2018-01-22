@@ -9,7 +9,7 @@ class JumbotronForm extends Component {
       open: false,
       handleForm: (e) => {
         e.preventDefault();
-        console.log('Button is clicked... sending data from from.');
+        console.log('Button is clicked... sending data from frontend to backend.');
         const text = document.getElementById('exampleEmail').value;
         this.socket.send(JSON.stringify({
           event: text,

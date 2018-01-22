@@ -4,18 +4,7 @@ const uWsApi = require('./uWsApi');
 const path = require('path');
 const app = express();
 const server = require('http').createServer();
-const r = require('rethinkdbdash')({
-	port: 8001,
-	host: 'localhost'
-});
-r.dbCreate('SitePoint')
-.run()
-.then(function(response){
-	console.log(response);
-})
-.error(function(err){
-	console.log('error occured ', err);
-});
+
 app.use(express.static(path.join(__dirname, '/build')));
 
 const wss = new WebSocketServer({

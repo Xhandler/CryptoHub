@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
+import axios from "axios";
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -10,10 +11,10 @@ class Main extends Component {
     };
   }
   componentDidMount() {
-//    axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
+   axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
       .then(res => {
         const posts = res.data.data.children.map(obj => obj.data);
-        this.setState({ posts });
+        console.log(posts);
       });
   }
   render() {
@@ -23,7 +24,8 @@ class Main extends Component {
           <Row>
             <Col xs={12} sm={12} md={6} lg={6} >
               <p>Area to place news sites</p>
-              // componentWillMount
+              // componentDidMount axios request, set state, render return a map of state, assign id for each iteration and onClick function
+              // which will grab id value and retrieve from data model, on click display on the right side of screen
               //
               //
             </Col>
