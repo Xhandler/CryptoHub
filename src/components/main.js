@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import axios from "axios";
+import cheerio from 'cheerio';
+import axios from 'axios';
+
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -11,12 +14,13 @@ class Main extends Component {
     };
   }
   componentDidMount() {
-   axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
-      .then(res => {
-        const posts = res.data.data.children.map(obj => obj.data);
-        console.log(posts);
-      });
-  }
+    fetch('//coindesk.com', {
+  mode: 'no-cors'
+}).then(function(response) {
+  console.log(response); // "opaque"
+})
+}
+
   render() {
     return (
       <div>

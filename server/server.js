@@ -4,8 +4,14 @@ const uWsApi = require('./uWsApi');
 const path = require('path');
 const app = express();
 const server = require('http').createServer();
+const cors = require("cors");
+
+app.options('*', cors());
+
 
 app.use(express.static(path.join(__dirname, '/build')));
+
+
 
 const wss = new WebSocketServer({
   server
