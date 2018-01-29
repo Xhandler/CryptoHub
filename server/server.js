@@ -6,23 +6,22 @@ const app = express();
 const server = require('http').createServer();
 const cors = require("cors");
 
-app.options('*', cors());
-
 
 app.use(express.static(path.join(__dirname, '/build')));
-
-
 
 const wss = new WebSocketServer({
   server
 });
 wss.on('connection', (ws) => {
   console.log('started client interval');
-  ws.onmessage = function(e) {
+  ws.onmessage = async function(e) {
    const data = JSON.parse(e.data);
    switch(data.event) {
     case 'login':
       uWsApi.login(data.event);
+    case 'scrape':
+      const coindeskData = await uWsApi.scrape();
+      ws.send(coindeskData);
   }
 };
   ws.on('close', function() {
