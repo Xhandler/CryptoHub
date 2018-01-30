@@ -8,19 +8,23 @@ const response = await fetch(searchUrl, {
 });
 const htmlString = await response.text();
 const $ = cheerio.load(htmlString);
-let coindeskScrape = [{
-  links: {},
-  titles: {}
-}];
-$('.fade').each( function () {
+let coindeskScrape = {};
+let pushLink = [];
+let pushTitle = [];
+$('.fade').each(function() {
 let link = $(this).attr('href');
 let title = $(this).attr('title');
 
-coindeskScrape[0].links.push(link);
-// coindeskScrape['title'].push({'title':title});
-
-// return JSON.stringify(coindeskScrape);
+if(pushLink.includes(link) === false) {
+  pushLink.push(link);
+}
+if(pushTitle.includes(title) === false) {
+  pushTitle.push(title);
+}
 })
+coindeskScrape.link = pushLink;
+coindeskScrape.title = pushTitle;
+console.log(coindeskScrape)
 };
 
 module.exports = coin;
