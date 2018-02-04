@@ -6,7 +6,6 @@ const app = express();
 const server = require('http').createServer();
 const cors = require("cors");
 
-
 app.use(express.static(path.join(__dirname, '/build')));
 
 const wss = new WebSocketServer({
@@ -21,7 +20,9 @@ wss.on('connection', (ws) => {
       uWsApi.login(data.event);
     case 'scrape':
       const coindeskData = await uWsApi.scrape();
-      ws.send(coindeskData);
+      console.log(`Sucessfully scraped coindesk`);
+      console.log(coindeskData);
+      ws.send(JSON.stringify(coindeskData));
   }
 };
   ws.on('close', function() {

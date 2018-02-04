@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../img/000192-cat.png';
+
 class NavBar extends Component {
   render() {
     return (
@@ -16,4 +17,5 @@ class NavBar extends Component {
     );
   }
 }
+
 export default NavBar;

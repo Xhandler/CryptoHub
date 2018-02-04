@@ -5,6 +5,7 @@ class JumbotronForm extends Component {
     super(props);
     this.socket = new WebSocket('ws://localhost:8001');
     this.state = {
+      name:"brad",
       connected: false,
       open: false,
       handleForm: (e) => {
@@ -40,7 +41,7 @@ class JumbotronForm extends Component {
           <Label for="exampleEmail">Search</Label>
           <Input type="text" id="exampleEmail" refs="messageText" placeholder="Choose news feed to add..." />
           <Button className="btn-primary" type="button" onClick={this.state.handleForm}>
-          Submit!
+          {this.state.name}
           </Button>
         </FormGroup>
       </Form>

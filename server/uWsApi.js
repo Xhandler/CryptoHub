@@ -5,7 +5,7 @@ const uWsApi = {
     console.log(data);
   },
   scrape: (data) => {
-    coin()
+    return coin();
   }
 };
 
