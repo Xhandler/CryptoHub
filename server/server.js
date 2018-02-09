@@ -20,8 +20,6 @@ wss.on('connection', (ws) => {
       uWsApi.login(data.event);
     case 'scrape':
       const coindeskData = await uWsApi.scrape();
-      console.log(`Sucessfully scraped coindesk`);
-      console.log(coindeskData);
       ws.send(JSON.stringify(coindeskData));
   }
 };
@@ -32,5 +30,5 @@ wss.on('connection', (ws) => {
 
 server.on('request', app);
 server.listen(8001, function() {
-  console.log('Listening on http://localhost:8001');
+  console.log('Starting up server on http://localhost:8001');
 });

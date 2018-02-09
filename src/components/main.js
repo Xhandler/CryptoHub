@@ -8,8 +8,8 @@ class Main extends Component {
     super(props);
     this.socket = new WebSocket('ws://localhost:8001');
     this.state = {
-      title: false,
-      link: false,
+      titles: false,
+      links: false,
       connected: false,
       open: false,
       data: {}
@@ -22,6 +22,7 @@ class Main extends Component {
       }));
     };
     this.socket.onmessage = (e) => {
+      console.log('Message sent to main component');
       const data = JSON.parse(e.data);
       console.log(data);
       switch(data.event) {
