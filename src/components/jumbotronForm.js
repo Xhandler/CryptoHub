@@ -12,10 +12,8 @@ class JumbotronForm extends Component {
         console.log('Button is clicked... sending data from frontend to backend.');
         const text = document.getElementById('exampleEmail').value;
         this.socket.send(JSON.stringify({
-          event: text,
-          test: {
-            message: 'test'
-          }
+          event: 'text',
+          test: text
         }));
       }
     };

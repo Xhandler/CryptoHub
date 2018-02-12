@@ -10,20 +10,16 @@ const coin = async () => {
   const htmlString = await response.text();
   const $ = cheerio.load(htmlString);
   let coindeskScrape = {event: 'scrape'};
-  let pushLink = [];
-  let pushTitle = [];
+  let pushLinkTitle = [];
   $('.fade').each(function() {
     let link = $(this).attr('href');
     let title = $(this).attr('title');
-    if (pushLink.includes(link) === false && pushTitle.includes(title) === false) {
-      pushLink.push(link);
-      pushTitle.push(title);
-    }
+      pushLinkTitle.push({
+        'link':link,
+        'title':title
+      });
   });
-  if(!coindeskScrape.link && !coindeskScrape.title ) {
-    coindeskScrape.link = pushLink;
-    coindeskScrape.title = pushTitle;
-  };
+  coindeskScrape.linkTitle = pushLinkTitle;
   return coindeskScrape;
 };
 
