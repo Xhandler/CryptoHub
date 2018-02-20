@@ -18,19 +18,6 @@ class JumbotronForm extends Component {
       }
     };
   }
-  componentDidMount() {
-    this.socket.onopen = () => {
-      this.socket.send(JSON.stringify({
-        event: 'login',
-        test: {
-          message: 'test'
-        }
-      }));
-      this.setState({
-        connected: true
-      });
-    };
-  }
   render() {
     return (
       <Form>

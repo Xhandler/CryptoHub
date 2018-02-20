@@ -5,10 +5,26 @@
   color: white;
   margin-bottom: 0px !important;
 }
+
 .logo {
   position: absolute !important;
   left: 0 !important;
   right: 0 !important;
   margin: auto !important;
   top: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    color: white;
+}
+
+.news {
+  background-color: black;
 }

@@ -16,8 +16,6 @@ wss.on('connection', (ws) => {
   ws.onmessage = async function(e) {
    const data = JSON.parse(e.data);
    switch(data.event) {
-    case 'login':
-      uWsApi.login(data.event);
     case 'scrape':
       const coindeskData = await uWsApi.scrape();
       ws.send(JSON.stringify(coindeskData));

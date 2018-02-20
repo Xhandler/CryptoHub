@@ -13,6 +13,9 @@ class Main extends Component {
       open: false,
     };
   }
+  handleClick = () => {
+   console.log('this is:', this.key);
+ }
   componentDidMount() {
     this.socket.onopen = () => {
       this.socket.send(JSON.stringify({
@@ -20,34 +23,26 @@ class Main extends Component {
       }));
     };
     this.socket.onmessage = (e) => {
-      console.log('Message sent to main component');
       const data = JSON.parse(e.data);
-      console.log(data.linkTitle);
       switch(data.event) {
        case 'scrape':
          this.setState({
            linkTitle: data.linkTitle,
          });
-     }
+       }
+      }
     }
-  }
   render() {
-    let combo = this.state.linkTitle;
+    let feed = this.state.linkTitle;
     return (
-      <div>
-        <Grid fluid={true}>
-          <Row>
+          <Row className='news'>
             <Col xs={12} sm={12} md={6} lg={6}>
-            <div>
-            {combo.map((linkPlusTitle) => <li key={linkPlusTitle.id}>{linkPlusTitle.title} <br/> {linkPlusTitle.link}</li>)}
-            </div>
+            {feed.map((linkPlusTitle) => <li key={linkPlusTitle.id} onClick={this.handleClick}>{linkPlusTitle.title}<br/><a href={linkPlusTitle.link}>{linkPlusTitle.link}</a></li>)}
             </Col>
             <Col xs={12} sm={12} md={6} lg={6}>
               <p>Area to display currently active links</p>
             </Col>
           </Row>
-        </Grid>
-      </div>
     );
   }
 }

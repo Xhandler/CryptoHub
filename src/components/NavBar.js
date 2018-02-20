@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
-import Logo from '../img/000192-cat.png';
+import Logo from '../img/Logomakr_5lCYUD.png';
 
 class NavBar extends Component {
   render() {
@@ -9,7 +9,7 @@ class NavBar extends Component {
         <Navbar>
           <Nav>
             <ul>
-              <li><img className="logo" src={Logo}></img></li>
+            <li><img className="logo" src={Logo}></img></li>
             </ul>
           </Nav>
         </Navbar>
