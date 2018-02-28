@@ -10,10 +10,12 @@ class JumbotronForm extends Component {
       handleForm: (e) => {
         e.preventDefault();
         console.log('Button is clicked... sending data from frontend to backend.');
-        const text = document.getElementById('exampleEmail').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('passwprd').value
         this.socket.send(JSON.stringify({
-          event: 'text',
-          test: text
+          event: 'signUp',
+          username: username,
+          password: password
         }));
       }
     };
@@ -23,7 +25,8 @@ class JumbotronForm extends Component {
       <Form>
         <FormGroup>
           <Label for="exampleEmail">Search</Label>
-          <Input type="text" id="exampleEmail" refs="messageText" placeholder="Choose news feed to add..." />
+          <Input type="text" id="username" refs="messageText" placeholder="Choose a username" />
+          <Input type="text" id="password" refs="messageText" placeholder="Choose a password" />
           <Button className="btn-primary" type="button" onClick={this.state.handleForm}>
           </Button>
         </FormGroup>
