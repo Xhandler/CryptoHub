@@ -38,6 +38,8 @@ wss.on('connection', (ws) => {
     case 'scrape':
       const coindeskData = await uWsApi.scrape();
       ws.send(JSON.stringify(coindeskData));
+    case 'text':
+    console.log(data.test);
   }
 };
   ws.on('close', function() {
