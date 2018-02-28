@@ -22,6 +22,5 @@ const coin = async () => {
   coindeskScrape.linkTitle = pushLinkTitle;
   return coindeskScrape;
 };
-// Build out a series of these functinos which will each scrape from a predetermined site;
-// Export all of these functions in a function which runs every one of them and returns th
+
 module.exports = coin;

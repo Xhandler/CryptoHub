@@ -12,6 +12,7 @@
     "geoip-lite": "^1.2.1",
     "http-server": "^0.10.0",
     "node-fetch": "^1.7.3",
+    "rethinkdb": "^2.3.3",
     "rethinkdbdash": "^2.3.31",
     "thinky": "^2.3.9",
     "useragent": "^2.2.1",

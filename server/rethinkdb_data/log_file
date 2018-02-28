@@ -1,0 +1,60 @@
+2018-02-25T02:22:45.361786000 0.202315s notice: Recursively removing directory /Users/e/Documents/CryptoHub/server/rethinkdb_data/tmp
+2018-02-25T02:22:45.363572000 0.204103s notice: Initializing directory /Users/e/Documents/CryptoHub/server/rethinkdb_data
+2018-02-25T02:22:45.363651000 0.204180s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/e/Documents/CryptoHub/server/rethinkdb_data' did not already exist or is empty.)
+2018-02-25T02:22:45.363674000 0.204202s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-02-25T02:22:45.367552000 0.208081s notice: Running on Darwin 17.4.0 x86_64
+2018-02-25T02:22:45.367628000 0.208156s notice: Loading data from directory /Users/e/Documents/CryptoHub/server/rethinkdb_data
+2018-02-25T02:22:45.513112000 0.353640s info: Automatically using cache size of 100 MB
+2018-02-25T02:22:45.513134000 0.353662s warn: Cache size does not leave much memory for server and query overhead (available memory: 1104 MB).
+2018-02-25T02:22:45.513138000 0.353666s warn: Cache size is very low and may impact performance.
+2018-02-25T02:22:45.514293000 0.354821s notice: Listening for intracluster connections on port 29015
+2018-02-25T02:22:45.516129000 0.356657s notice: Listening for client driver connections on port 28015
+2018-02-25T02:22:45.516241000 0.356769s notice: Listening for administrative HTTP connections on port 8080
+2018-02-25T02:22:45.516244000 0.356772s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-02-25T02:22:45.516249000 0.356777s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-02-25T02:22:45.516251000 0.356779s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-02-25T02:22:45.516255000 0.356783s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-02-25T02:22:45.516260000 0.356788s notice: Server ready, "Ericks_iMac_local_7fc" 881bbeda-a358-43c6-8a58-73547ba6835d
+2018-02-25T21:44:19.173877000 5009.951587s notice: Server got SIGINT from pid 349, uid 501; shutting down...
+2018-02-25T21:44:19.177108000 5009.954816s notice: Shutting down client connections...
+2018-02-25T21:44:19.178015000 5009.955722s notice: All client connections closed.
+2018-02-25T21:44:19.178021000 5009.955729s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-02-25T21:44:19.183707000 5009.961415s notice: Storage engine shut down.
+2018-02-28T00:23:25.009073000 0.264810s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-02-28T00:23:25.050471000 0.306206s notice: Running on Darwin 17.4.0 x86_64
+2018-02-28T00:23:25.050512000 0.306246s notice: Loading data from directory /Users/e/Documents/CryptoHub/server/rethinkdb_data
+2018-02-28T00:23:25.137682000 0.393416s info: Automatically using cache size of 100 MB
+2018-02-28T00:23:25.137690000 0.393423s warn: Cache size does not leave much memory for server and query overhead (available memory: 701 MB).
+2018-02-28T00:23:25.137694000 0.393427s warn: Cache size is very low and may impact performance.
+2018-02-28T00:23:25.138855000 0.394588s notice: Listening for intracluster connections on port 29015
+2018-02-28T00:23:25.140647000 0.396380s notice: Listening for client driver connections on port 28015
+2018-02-28T00:23:25.140751000 0.396484s notice: Listening for administrative HTTP connections on port 8080
+2018-02-28T00:23:25.140753000 0.396486s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-02-28T00:23:25.140758000 0.396491s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-02-28T00:23:25.140760000 0.396493s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-02-28T00:23:25.140765000 0.396498s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-02-28T00:23:25.140770000 0.396503s notice: Server ready, "Ericks_iMac_local_7fc" 881bbeda-a358-43c6-8a58-73547ba6835d
+2018-02-28T00:24:47.884886000 83.140508s notice: Server got SIGINT from pid 349, uid 501; shutting down...
+2018-02-28T00:24:47.885013000 83.140635s notice: Shutting down client connections...
+2018-02-28T00:24:47.885125000 83.140747s notice: All client connections closed.
+2018-02-28T00:24:47.885129000 83.140751s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-02-28T00:24:47.888357000 83.143979s notice: Storage engine shut down.
+2018-02-28T00:28:02.521255000 0.153057s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-02-28T00:28:02.550913000 0.182713s notice: Running on Darwin 17.4.0 x86_64
+2018-02-28T00:28:02.550951000 0.182749s notice: Loading data from directory /Users/e/Documents/CryptoHub/server/rethinkdb_data
+2018-02-28T00:28:02.628332000 0.260131s info: Automatically using cache size of 100 MB
+2018-02-28T00:28:02.628341000 0.260139s warn: Cache size does not leave much memory for server and query overhead (available memory: 795 MB).
+2018-02-28T00:28:02.628351000 0.260149s warn: Cache size is very low and may impact performance.
+2018-02-28T00:28:02.632116000 0.263914s notice: Listening for intracluster connections on port 29015
+2018-02-28T00:28:02.634484000 0.266283s notice: Listening for client driver connections on port 28015
+2018-02-28T00:28:02.634645000 0.266443s notice: Listening for administrative HTTP connections on port 8080
+2018-02-28T00:28:02.637824000 0.269622s notice: Listening on cluster addresses: 127.0.0.1, 192.168.1.133, ::1, fdfb:ce06:8203::da8:b83:2abd:5137, fdfb:ce06:8203::144e:5281:bdd8:d965, fdfb:ce06:8203::3157:dd30:338b:877f, fdfb:ce06:8203::b5ef:a3c6:ee0f:8bee, fe80::1%1, fe80::1432:9ccd:b47d:aa36%7, fe80::284c:142c:3a31:c34b%14, fe80::443b:2748:d94c:f573%13, fe80::6cfd:3cff:fe43:e445%9
+2018-02-28T00:28:02.639412000 0.271211s notice: Listening on driver addresses: 127.0.0.1, 192.168.1.133, ::1, fdfb:ce06:8203::da8:b83:2abd:5137, fdfb:ce06:8203::144e:5281:bdd8:d965, fdfb:ce06:8203::3157:dd30:338b:877f, fdfb:ce06:8203::b5ef:a3c6:ee0f:8bee, fe80::1%1, fe80::1432:9ccd:b47d:aa36%7, fe80::284c:142c:3a31:c34b%14, fe80::443b:2748:d94c:f573%13, fe80::6cfd:3cff:fe43:e445%9
+2018-02-28T00:28:02.642897000 0.274696s notice: Listening on http addresses: 127.0.0.1, 192.168.1.133, ::1, fdfb:ce06:8203::da8:b83:2abd:5137, fdfb:ce06:8203::144e:5281:bdd8:d965, fdfb:ce06:8203::3157:dd30:338b:877f, fdfb:ce06:8203::b5ef:a3c6:ee0f:8bee, fe80::1%1, fe80::1432:9ccd:b47d:aa36%7, fe80::284c:142c:3a31:c34b%14, fe80::443b:2748:d94c:f573%13, fe80::6cfd:3cff:fe43:e445%9
+2018-02-28T00:28:02.642908000 0.274706s notice: Server ready, "Ericks_iMac_local_7fc" 881bbeda-a358-43c6-8a58-73547ba6835d
+2018-02-28T00:28:03.286854000 0.918652s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Starting a new Raft election for term 1.
+2018-02-28T00:28:03.287132000 0.918929s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Added replica on this server.
+2018-02-28T00:28:03.322552000 0.954349s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: Starting a new Raft election for term 1.
+2018-02-28T00:28:03.322767000 0.954564s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: Added replica on this server.
+2018-02-28T00:28:03.353636000 0.985434s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: This server is Raft leader for term 1. Latest log index is 0.
+2018-02-28T00:28:03.353730000 0.985527s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: This server is Raft leader for term 1. Latest log index is 0.
