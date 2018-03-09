@@ -11,7 +11,7 @@ class JumbotronForm extends Component {
         e.preventDefault();
         console.log('Button is clicked... sending data from frontend to backend.');
         const username = document.getElementById('username').value;
-        const password = document.getElementById('passwprd').value
+        const password = document.getElementById('password').value;
         this.socket.send(JSON.stringify({
           event: 'signUp',
           username: username,

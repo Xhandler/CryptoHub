@@ -8,6 +8,7 @@
     "cheerio-without-node-native": "^0.20.2",
     "copyfiles": "*",
     "create-react-class": "*",
+    "npm": "^5.7.1",
     "react": "*",
     "react-addons-linked-state-mixin": "^15.6.2",
     "react-bootstrap": "*",

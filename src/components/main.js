@@ -12,10 +12,11 @@ class Main extends Component {
       activeLink: [],
       connected: false,
       open: false,
+      isLoggedin: false
     };
   }
   handleClick = (e) => {
-   console.log(e.currentTarget.dataset.id );
+   console.log(e.currentTarget.dataset.id);
  }
   componentDidMount() {
     this.socket.onopen = () => {
@@ -35,11 +36,13 @@ class Main extends Component {
     }
   render() {
     let feed = this.state.linkTitle;
+
     return (
           <Row className='news'>
             <Col xs={12} sm={12} md={6} lg={6}>
             {feed.map((linkPlusTitle, i) => <li data-id={i} onClick={this.handleClick}>{linkPlusTitle.title}<br/><a href={linkPlusTitle.link}>{linkPlusTitle.link}</a></li>)}
             </Col>
+
             <Col xs={12} sm={12} md={6} lg={6}>
               <p>Area to display currently active links</p>
             </Col>

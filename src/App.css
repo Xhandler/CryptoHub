@@ -28,3 +28,7 @@ li {
 .news {
   background-color: black;
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
