@@ -32,14 +32,11 @@ class NavBar extends Component {
     } else {
       button = <Button className="btn-primary" type="button" onClick={this.state.handleLogoutClick}>On</Button>
     }
-
     return (
       <div className="NavBar">
         <Navbar>
           <Nav>
-            <ul>
-            <li><img className="logo" src={Logo}></img></li>
-            </ul>
+            <img className="logo" src={Logo}></img>
             {button}
           </Nav>
         </Navbar>

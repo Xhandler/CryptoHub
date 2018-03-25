@@ -14,10 +14,10 @@ const coin = async () => {
   $('.fade').each(function() {
     let link = $(this).attr('href');
     let title = $(this).attr('title');
-      pushLinkTitle.push({
-        'link':link,
-        'title':title
-      });
+    pushLinkTitle.push({
+      'link':link,
+      'title':title
+    });
   });
   coindeskScrape.linkTitle = pushLinkTitle;
   return coindeskScrape;

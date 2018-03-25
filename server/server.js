@@ -32,11 +32,7 @@ wss.on('connection', (ws) => {
     {
       username: data.username, password: data.password
     }
-]).run(connection, function(err, result) {
-    if (err) throw err;
-    console.log(JSON.stringify(result, null, 2));
-})
-    // add these items into the database
+  ])
     case 'logIn':
     // check if authentication clears
     // change state to render component which pulls the cleared data into a div and says welcome 'user'

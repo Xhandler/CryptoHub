@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, FormText, Input, Label } from 'reactstrap';
+
 class JumbotronForm extends Component {
   constructor(props) {
     super(props);
