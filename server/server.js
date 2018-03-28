@@ -24,8 +24,8 @@ wss.on('connection', (ws) => {
    const data = JSON.parse(e.data);
    switch(data.event) {
     case 'scrape':
-      const coindeskData = await uWsApi.scrape();
-      ws.send(JSON.stringify(coindeskData));
+      const scrapeData = await uWsApi.scrape();
+      ws.send(JSON.stringify(scrapeData));
     case 'signUp':
     console.log(data.username);
     r.table('Author').insert([

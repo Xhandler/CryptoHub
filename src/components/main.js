@@ -29,7 +29,7 @@ class Main extends Component {
       switch(data.event) {
        case 'scrape':
          this.setState({
-           linkTitle: data.linkTitle,
+           linkTitle: data.coinDesk,
          });
        }
       }

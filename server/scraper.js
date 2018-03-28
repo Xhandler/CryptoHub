@@ -19,7 +19,7 @@ const coin = async () => {
       'title':title
     });
   });
-  coindeskScrape.linkTitle = pushLinkTitle;
+  coindeskScrape.coinDesk = pushLinkTitle;
   return coindeskScrape;
 };
 
