@@ -5,10 +5,6 @@ const uWsApi = {
     console.log(data);
   },
   scrape: (data) => {
-    // a = coindeskScrape
-    // a.(INSERT WEBSITE SCRAPE HERE)
-    // let a = coin();
-    // let a.somewebsite = otherscrapefunction();
     return coin();
   }
 };

@@ -282,3 +282,4 @@
 2018-03-18T13:42:39.554850000 2.163701s info: Table a7cb8a04-b119-4234-bf52-783649719e9f: This server is Raft leader for term 11. Latest log index is 31.
 2018-03-18T13:42:39.928627000 2.537478s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Starting a new Raft election for term 11.
 2018-03-18T13:42:40.057490000 2.666341s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: This server is Raft leader for term 11. Latest log index is 30.
+2018-03-29T19:03:00.063010000 602981.125348s info: Table a7cb8a04-b119-4234-bf52-783649719e9f: Deleted the table.
