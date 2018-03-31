@@ -23,6 +23,7 @@ function init(server) {
       if(data.username && data.password) {
         let username = data.username;
         let password = data.password;
+        console.log(`${username} ${password}`);
         r.table('Author').insert([
         {
           username: username, password: password
