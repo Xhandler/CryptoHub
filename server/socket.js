@@ -7,7 +7,7 @@ r.connect( {host: 'localhost', port: 28015}, function(err, conn) {
     connection = conn;
 });
 
-function init(server) {
+const init = (server) => {
   const wss = new WebSocketServer({
     server: server,
   });
@@ -18,7 +18,6 @@ function init(server) {
       case 'scrape':
         const scrapeData = await uWsApi.scrape();
         ws.send(JSON.stringify(scrapeData));
-
       case 'signUp':
       if(data.username && data.password) {
         let username = data.username;

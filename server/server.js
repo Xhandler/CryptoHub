@@ -8,8 +8,8 @@ server.on('request', app);
 server.listen(8001, function() {
   console.log('Starting up server on http://localhost:8001');
 });
-const socket = require('./socket')(server); // require socket.io code
-const routes = require('./routes')(socket); // require routes
+const socket = require('./socket')(server);
+const routes = require('./routes')(socket);
 
 app.use('/', routes);
 app.use(express.static(path.join(__dirname, '/build')));
