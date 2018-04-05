@@ -40,7 +40,7 @@ class Main extends Component {
     return (
       <Row className='news'>
         <Col xs={12} sm={12} md={6} lg={6}>
-        {feed.map((linkPlusTitle, i) => <li data-id={i} onClick={this.handleClick}>{linkPlusTitle.title}<br/><a href={linkPlusTitle.link}>{linkPlusTitle.link}</a></li>)}
+        {feed.map((linkPlusTitle, i) => <li data-id={i} onClick={this.handleClick}>{console.log(linkPlusTitle.title)}{`${linkPlusTitle.title}`}<br/><a href={linkPlusTitle.link}>{linkPlusTitle.link}</a></li>)}
         </Col>
         <Col xs={12} sm={12} md={6} lg={6}>
           <p>Area to display currently active links</p>

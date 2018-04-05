@@ -10,11 +10,10 @@ const App = () => (
   <Router>
     <div>
       <Route path="/" component={landingPage}/>
-      // if log in is successful, then we need to rerender this page based on that user...
-      // for user page <Route path="/" component={settingsPage}/>
-      // <Route settings page path="/" component={userPage}/>
     </div>
   </Router>
 )
 
 export default App;
+
+

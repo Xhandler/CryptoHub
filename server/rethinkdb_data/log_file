@@ -283,3 +283,36 @@
 2018-03-18T13:42:39.928627000 2.537478s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Starting a new Raft election for term 11.
 2018-03-18T13:42:40.057490000 2.666341s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: This server is Raft leader for term 11. Latest log index is 30.
 2018-03-29T19:03:00.063010000 602981.125348s info: Table a7cb8a04-b119-4234-bf52-783649719e9f: Deleted the table.
+2018-04-04T18:20:43.170449682 0.098559s notice: Recursively removing directory /home/chandler/apps/crypto/CryptoHub/server/rethinkdb_data/tmp
+2018-04-04T18:20:43.188950585 0.117059s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2018-04-04T18:20:43.191452439 0.119563s notice: Running on Linux 4.13.0-36-generic x86_64
+2018-04-04T18:20:43.191493650 0.119602s notice: Loading data from directory /home/chandler/apps/crypto/CryptoHub/server/rethinkdb_data
+2018-04-04T18:20:43.270192513 0.198302s info: Automatically using cache size of 5133 MB
+2018-04-04T18:20:43.270589539 0.198698s notice: Listening for intracluster connections on port 29015
+2018-04-04T18:20:43.346923302 0.275032s notice: Listening for client driver connections on port 28015
+2018-04-04T18:20:43.347023194 0.275132s notice: Listening for administrative HTTP connections on port 8080
+2018-04-04T18:20:43.347025735 0.275134s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-04T18:20:43.347027628 0.275136s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-04T18:20:43.347034099 0.275142s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-04T18:20:43.347035805 0.275144s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-04-04T18:20:43.347037752 0.275146s notice: Server ready, "Ericks_iMac_local_7fc" 881bbeda-a358-43c6-8a58-73547ba6835d
+2018-04-04T18:20:45.006457303 1.934566s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: Starting a new Raft election for term 12.
+2018-04-04T18:20:45.041898674 1.970007s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: This server is Raft leader for term 12. Latest log index is 37.
+2018-04-04T18:20:45.128280418 2.056389s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Starting a new Raft election for term 12.
+2018-04-04T18:20:45.158709292 2.086818s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: This server is Raft leader for term 12. Latest log index is 33.
+2018-04-05T14:35:09.565704360 0.087559s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2018-04-05T14:35:09.567435983 0.089292s notice: Running on Linux 4.13.0-36-generic x86_64
+2018-04-05T14:35:09.567478632 0.089333s notice: Loading data from directory /home/chandler/apps/crypto/CryptoHub/server/rethinkdb_data
+2018-04-05T14:35:09.612141448 0.133997s info: Automatically using cache size of 5125 MB
+2018-04-05T14:35:09.613619589 0.135474s notice: Listening for intracluster connections on port 29015
+2018-04-05T14:35:09.699405584 0.221261s notice: Listening for client driver connections on port 28015
+2018-04-05T14:35:09.699660722 0.221516s notice: Listening for administrative HTTP connections on port 8080
+2018-04-05T14:35:09.699670323 0.221525s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-05T14:35:09.699678303 0.221533s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-05T14:35:09.699686681 0.221541s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2018-04-05T14:35:09.699716394 0.221571s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-04-05T14:35:09.699740644 0.221595s notice: Server ready, "Ericks_iMac_local_7fc" 881bbeda-a358-43c6-8a58-73547ba6835d
+2018-04-05T14:35:10.782191692 1.304047s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: Starting a new Raft election for term 13.
+2018-04-05T14:35:10.823407402 1.345262s info: Table 73c975e5-49b3-4039-a0ea-b3c3bef1b582: This server is Raft leader for term 13. Latest log index is 40.
+2018-04-05T14:35:10.981926484 1.503782s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: Starting a new Raft election for term 13.
+2018-04-05T14:35:10.998484361 1.520339s info: Table dd9880bf-c5e0-4420-a013-543c6af7f1b6: This server is Raft leader for term 13. Latest log index is 36.

@@ -12,4 +12,4 @@ const socket = require('./socket')(server);
 const routes = require('./routes')(socket);
 
 app.use('/', routes);
-app.use(express.static(path.join(__dirname, '/build')));
+app.use(express.static('../build'));
